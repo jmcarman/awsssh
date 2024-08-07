@@ -1,0 +1,4 @@
+/* Write a devcontainer.json file that will execute the install.bash script when the container is created. */
+{
+    "postCreateCommand": "/bin/bash /workspaces/*/install.bash"
+}
