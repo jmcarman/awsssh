@@ -10,3 +10,6 @@ This is a template repository to allow creating repos with GitHub actions enable
 3. Add the secret:
     - With the name **SSH_KEY**
     - In the **Secret * ** field, paste in the contents of your .pem file (cat from your local command line and copy/paste)
+    - Your screen should look as follows (note, in the screenshot the secret field has been left empty)
+    ![](.doc/new-secret.png)
+    - Click the green button labelled **Add secret**
