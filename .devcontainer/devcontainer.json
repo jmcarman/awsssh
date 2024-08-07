@@ -12,8 +12,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-    // "postCreateCommand": "/bin/bash /workspaces/*/install.bash"
-	"postCreateCommand": "/bin/bash if [ ! -d ~/.ssh ]; then; mkdir -p ~/.ssh; fi; echo \"${AWS_CNET204_KEY}\" > ~/.ssh/id_rsa; chmod 600 ~/.ssh/id_rsa; eval \"$(ssh-agent -s)\"; ssh-add ~/.ssh/id_rsa; echo 'AWS SSH key has been added to your Codespace.'"
+	"postCreateCommand": "/bin/bash if [ ! -d ~/.ssh ]; then; mkdir -p ~/.ssh; fi; echo \"${AWS_CNET204_KEY}\" > ~/.ssh/id_rsa; chmod 600 ~/.ssh/id_rsa; eval \"$(ssh-agent -s)\"; ssh-add ~/.ssh/id_rsa"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
