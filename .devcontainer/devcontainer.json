@@ -2,19 +2,6 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
 	"name": "Ubuntu",
-	"description": "An Ubuntu container for use with GitHub Codespaces with ssh access to AWS or Azure from the command line.",
-	"options": {
-        "imageVariant": {
-            "type": "string",
-            "description": "Ubuntu version (use ubuntu-22.04 or ubuntu-24.04 on local arm64/Apple Silicon):",
-            "proposals": [
-				"noble",
-                "jammy",
-                "focal"
-            ],
-            "default": "jammy"
-        }
-    },
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	// "image": "mcr.microsoft.com/devcontainers/base:noble",
 
@@ -26,12 +13,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
     // "postCreateCommand": "/bin/bash /workspaces/*/install.bash"
-	"postCreateCommand": "/bin/bash if [ ! -d ~/.ssh ]; then; mkdir -p ~/.ssh; fi",
-	"postCreateCommand": "/bin/bash echo \"${AWS_CNET204_KEY}\" > ~/.ssh/id_rsa",
-	"postCreateCommand": "/bin/bash chmod 600 ~/.ssh/id_rsa",
-	"postCreateCommand": "/bin/bash eval \"$(ssh-agent -s)\"",
-	"postCreateCommand": "/bin/bash ssh-add ~/.ssh/id_rsa",
-	"postCreateCommand": "/bin/bash echo 'AWS SSH key has been added to your Codespace.'"
+	"postCreateCommand": "/bin/bash if [ ! -d ~/.ssh ]; then; mkdir -p ~/.ssh; fi; echo \"${AWS_CNET204_KEY}\" > ~/.ssh/id_rsa; chmod 600 ~/.ssh/id_rsa; eval \"$(ssh-agent -s)\"; ssh-add ~/.ssh/id_rsa; echo 'AWS SSH key has been added to your Codespace.'"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
