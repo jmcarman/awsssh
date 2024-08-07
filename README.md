@@ -1,1 +1,2 @@
 # awsssh
+This is a template repository to test creating repos with GitHub actions enabled to install an AWS .pem key from the Learner Lab into GitHub Codespaces. This will allow students to ssh to their AWS resources from the Codespace terminal.
