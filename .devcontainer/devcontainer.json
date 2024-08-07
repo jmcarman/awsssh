@@ -2,6 +2,19 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
 	"name": "Ubuntu",
+	"description": "An Ubuntu container for use with GitHub Codespaces with ssh access to AWS or Azure from the command line.",
+	"options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "Ubuntu version (use ubuntu-22.04 or ubuntu-24.04 on local arm64/Apple Silicon):",
+            "proposals": [
+				"noble",
+                "jammy",
+                "focal"
+            ],
+            "default": "jammy"
+        }
+    },
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	// "image": "mcr.microsoft.com/devcontainers/base:noble",
 
