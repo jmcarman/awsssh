@@ -14,4 +14,5 @@ This is a template repository to allow creating repos with GitHub actions enable
     ![](.doc/new-secret.png)
     - Click the green button labelled **Add secret**
 4. Launch / Rebuild the Codespaces container.
-5. SSH to your AWS instance without specifying the location of the key. ie: ssh ubuntu@{ip or FQDN}.
+5. SSH to your AWS instance without specifying the location of the key. ie: ssh ubuntu@*ip or FQDN*.
+# How do I italicize text in github flavored markdown?
