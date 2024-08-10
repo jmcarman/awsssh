@@ -19,6 +19,7 @@ This is a template repository to allow creating repos with GitHub actions enable
 5. SSH to your AWS instance without specifying the location of the key. ie: ssh ubuntu@*ip or FQDN*.
 
 ## Option B: GitHub account wide SSH key installed on every codespace you own
+
 1. Create a repo called dotfiles (if you do not already have one).
 2. Follow the steps outlined above (in option A) to add your .pem file as a secret to your dotfiles repo. Keep the same naming conventions.
 3. Copy install.sh into your dotfiles repo.
