@@ -1,5 +1,5 @@
 # README
-This is a template repository to allow creating repos with GitHub actions enabled to install an AWS .pem key from the Learner Lab into GitHub Codespaces. This will allow students to ssh to their AWS resources from the Codespace terminal. There are two ways you can use the contents of this repo. 
+The devcontainer configuration files in this repository install an AWS .pem key from the Learner Lab (via a repository secret) into GitHub Codespaces. This will allow students to ssh to their AWS resources from the Codespace terminal. There are two ways you can use the contents of this repo. 
 
 ## Option A: For a per repo SSH key
 
