@@ -3,7 +3,7 @@ The devcontainer configuration files in this repository install an AWS .pem key 
 
 ## Option A: For a per repo SSH key
 
-1. Create a repo by forking this one OR Include the contents of devcontainer/devcontainer.json in your repo / template repo.
+1. Create a repo by forking this one OR Include the contents of the devcontainer directory in your repo / template repo.
 2. Add your .pem file as a GitHub secret called "SSH_KEY" using the following steps in **YOUR** new repository:
     - Go to **Settings** (top right corner)
     - Click on **Secrets and variables**
