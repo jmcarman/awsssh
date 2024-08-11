@@ -26,3 +26,5 @@ This is a template repository to allow creating repos with GitHub actions enable
 4. Follow the documentation here to enable your dotfiles repo. https://docs.github.com/en/codespaces/setting-your-user-preferences/personalizing-github-codespaces-for-your-account#dotfiles
 5. You may need to rebuild the container for any existing Codespaces you own.
 6. Note: Keys added via your dotfiles repo will be installed over top of per-repo keys with this configuration. I'm sure there's a way to change it up.
+
+At present there are issues getting this to work with GitHub Classroom. I'm working on that.
