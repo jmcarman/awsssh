@@ -27,4 +27,4 @@ The devcontainer configuration files in this repository install an AWS .pem key 
 5. You may need to rebuild the container for any existing Codespaces you own.
 6. Note: Keys added via your dotfiles repo will be installed over top of per-repo keys with this configuration. I'm sure there's a way to change it up.
 
-At present there are issues getting this to work with GitHub Classroom. I'm working on that.
+This works with GitHub Classroom. The only drawback is you need to give students admin privileges on their assignment repo.
