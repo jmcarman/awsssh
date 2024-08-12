@@ -1,10 +1,10 @@
 #!/bin/bash
-# Author:        Jason Carman; jasonmcarman@gmail.com
+# Author:   Jason Carman; jasonmcarman@gmail.com
 # Date:     August 5, 2024
-# Purpose:        Install an SSH key into the GitHub Codespaces container
-# Usage:        Add this file or the contents of it to the .devcontainer directory in your repository
-# License:        Apache 2.0
-# Link:        https://www.apache.org/licenses/LICENSE-2.0
+# Purpose:  Install an SSH key into the GitHub Codespaces container
+# Usage:    Add this file or the contents of it to the .devcontainer directory in your repository
+# License:  Apache 2.0
+# Link:     https://www.apache.org/licenses/LICENSE-2.0
 #
 
 # If the ~/.ssh directory doesn't exist, create it
